@@ -31,7 +31,7 @@ twitter_username: jiztom
 github_username:  jiztom
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: minima
 plugins:
   - jekyll-feed
 
