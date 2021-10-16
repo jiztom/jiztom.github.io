@@ -34,11 +34,6 @@ github_username:  jiztom
 theme: minima
 plugins:
   - jekyll-feed
-
-additional_links:
-- title: itsgoingto.be
-  icon: fas fa-globe
-  url: https://www.itsgoingto.be
   
 # Exclude from processing.
 # The following items will not be processed, by default.
