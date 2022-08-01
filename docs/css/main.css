@@ -2243,10 +2243,10 @@ h5, .h5 {
   line-height: 1.4em;
   margin-bottom: 15px; }
 
-h6, .h6 {
+/*h6, .h6 {
   font-size: 1em;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase; }*/
 
 p {
   line-height: 1.61em; }
