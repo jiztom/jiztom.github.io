@@ -113,7 +113,7 @@
   background: #ffffff;
   width: 22px !important;
   height: 22px !important;
-  margin: 0px -11px;
+  margin: 0 -11px;
   border-radius: 20px;
   position: absolute;
   float: left;
@@ -352,7 +352,7 @@
   -webkit-transition: 300ms ease 0s;
   -moz-transition: 300ms ease 0s;
   -ms-transition: 300ms ease 0s;
-  -o-transform: 300ms ease 0s;
+  /*-o-transform: 300ms ease 0s;*/
   transition: 300ms ease 0s; }
 
 .noUi-active {
@@ -919,7 +919,7 @@
 .datepicker table tr td.active.disabled:hover div {
   background-color: #378C3F;
   color: #FFFFFF;
-  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2); }
 
 .datepicker table tr td.active:hover div,
 .datepicker table tr td.active:hover:hover div,
@@ -1002,7 +1002,7 @@
 .datepicker table tr td span.active.disabled[disabled],
 .datepicker table tr td span.active.disabled:hover[disabled] {
   background-color: #378C3F;
-  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2); }
 
 .datepicker table tr td span.active:active,
 .datepicker table tr td span.active:hover:active,
@@ -1117,11 +1117,11 @@
   .navbar .navbar-nav > a.btn:active:hover,
   .navbar .navbar-nav > a.btn.active:focus,
   .navbar .navbar-nav > a.btn.active:hover,
-  .show >
+  .show >,
   .navbar .navbar-nav > a.btn.dropdown-toggle,
-  .show >
+  .show >,
   .navbar .navbar-nav > a.btn.dropdown-toggle:focus,
-  .show >
+  .show >,
   .navbar .navbar-nav > a.btn.dropdown-toggle:hover {
     background-color: #979797;
     color: #FFFFFF;
@@ -1154,17 +1154,17 @@
   .navbar .navbar-nav > a.btn[disabled].focus,
   .navbar .navbar-nav > a.btn[disabled]:active,
   .navbar .navbar-nav > a.btn[disabled].active,
-  fieldset[disabled]
+  fieldset[disabled],
   .navbar .navbar-nav > a.btn,
-  fieldset[disabled]
+  fieldset[disabled],
   .navbar .navbar-nav > a.btn:hover,
-  fieldset[disabled]
+  fieldset[disabled],
   .navbar .navbar-nav > a.btn:focus,
-  fieldset[disabled]
+  fieldset[disabled],
   .navbar .navbar-nav > a.btn.focus,
-  fieldset[disabled]
+  fieldset[disabled],
   .navbar .navbar-nav > a.btn:active,
-  fieldset[disabled]
+  fieldset[disabled],
   .navbar .navbar-nav > a.btn.active {
     background-color: #888;
     border-color: #888; }
@@ -1201,7 +1201,7 @@
   .open > .btn.dropdown-toggle,
   .navbar .navbar-nav > a.btn:active,
   .navbar .navbar-nav > a.btn.active,
-  .open >
+  .open >,
   .navbar .navbar-nav > a.btn.dropdown-toggle {
     box-shadow: none;
     outline: 0 !important; }
@@ -1548,17 +1548,17 @@ fieldset[disabled] .btn-simple.active,
 .btn-link[disabled].focus,
 .btn-link[disabled]:active,
 .btn-link[disabled].active,
-fieldset[disabled]
+fieldset[disabled],
 .btn-link,
-fieldset[disabled]
+fieldset[disabled],
 .btn-link:hover,
-fieldset[disabled]
+fieldset[disabled],
 .btn-link:focus,
-fieldset[disabled]
+fieldset[disabled],
 .btn-link.focus,
-fieldset[disabled]
+fieldset[disabled],
 .btn-link:active,
-fieldset[disabled]
+fieldset[disabled],
 .btn-link.active {
   background-color: transparent; }
 
@@ -1895,7 +1895,7 @@ textarea.form-control {
 .checkbox label::after {
   font-family: 'Nucleo Outline';
   content: "\ea22";
-  top: 0px;
+  top: 0;
   text-align: center;
   font-size: 14px;
   opacity: 0;
@@ -2122,7 +2122,7 @@ textarea.form-control {
   border: 0;
   border-radius: 30px !important;
   transition: all .3s;
-  padding: 0px 11px;
+  padding: 0 11px;
   margin: 0 3px;
   min-width: 30px;
   text-align: center;
@@ -2150,7 +2150,7 @@ textarea.form-control {
 
 .pagination .page-item.active > .page-link {
   color: #E3E3E3;
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2); }
   .pagination .page-item.active > .page-link, .pagination .page-item.active > .page-link:focus, .pagination .page-item.active > .page-link:hover {
     background-color: #888;
     border-color: #888;
@@ -2385,7 +2385,7 @@ body {
   .nav-pills .nav-item .nav-link.active, .nav-pills .nav-item .nav-link.active:focus, .nav-pills .nav-item .nav-link.active:hover {
     background-color: #9A9A9A;
     color: #FFFFFF;
-    box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.3); }
   .nav-pills .nav-item .nav-link.disabled, .nav-pills .nav-item .nav-link:disabled, .nav-pills .nav-item .nav-link[disabled] {
     opacity: .5; }
 
@@ -2417,7 +2417,7 @@ body {
   background-color: #FF3636; }
 
 .tab-space {
-  padding: 20px 0 50px 0px; }
+  padding: 20px 0 50px 0; }
 
 .nav-align-center {
   text-align: center; }
@@ -2496,7 +2496,7 @@ body {
   padding-bottom: 0.625rem;
   min-height: 53px;
   margin-bottom: 20px;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15); }
   .navbar a {
     vertical-align: middle; }
     .navbar a:not(.btn):not(.dropdown-item) {
@@ -2617,7 +2617,7 @@ body {
 
 .dropdown-menu {
   border: 0;
-  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
   border-radius: 0.125rem;
   transition: all 150ms linear;
   font-size: 14px; }
@@ -2776,11 +2776,11 @@ img {
   border-radius: 1px; }
 
 .img-raised {
-  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3); }
 
 .popover {
   font-size: 14px;
-  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
   border: none;
   line-height: 1.7;
   max-width: 240px; }
@@ -3292,7 +3292,7 @@ Created using IcoMoon - icomoon.io
 .modal-content {
   border-radius: 0.1875rem;
   border: none;
-  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5); }
   .modal-content .modal-header {
     border-bottom: none;
     padding-top: 24px;
@@ -5292,4 +5292,12 @@ a.credit {
   justify-content: center;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+}
+
+.view-first:hover {
+  transform: rotate(30deg);
+  -ms-transform: rotate(30deg); /* IE 9 */
+  -webkit-transform: rotate(30deg); /* Safari and Chrome */
+  -o-transform: rotate(30deg); /* Opera */
+  -moz-transform: rotate(30deg); /* Firefox */
 }
