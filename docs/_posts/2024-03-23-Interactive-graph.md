@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Interactive Graph"
-date:   2024-03-23 04:23:00 -0500
+title:  "Interactive Graphs"
+date:   2024-03-22 20:38:41 -0500
 categories: jekyll update
 ---
 Testing if this makes a difference
