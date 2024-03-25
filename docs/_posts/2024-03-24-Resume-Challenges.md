@@ -7,7 +7,6 @@ categories: jekyll update
 
 Resume and Curriculum Vitae written based on multiple feedbacks read, given, spoken and referred.
 
-Base template from [Rogue workers](https://discourse.rogueworkers.com/t/resume-template-critique-software-engineer-experienced/178)
 
 For my application process, here are my steps:
 1. Define my domain of interest:
