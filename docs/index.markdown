@@ -7,4 +7,4 @@ layout: home
 Welcome to my Home Page. I will have interesting posts and related information regarding 
 my work stored in this webpage. Please use the contact me link to contact me.
 
-Good place for (markdown sytax)[https://www.markdownguide.org/basic-syntax/]
+Good place for [markdown sytax](https://www.markdownguide.org/basic-syntax/)

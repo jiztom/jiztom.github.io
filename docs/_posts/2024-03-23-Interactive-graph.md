@@ -5,4 +5,4 @@ date:   2024-03-22 19:38:41 -0500
 categories: jekyll update
 ---
 
-{% include interactive_graph.html %}
+Trying to use bokeh or somep python package
