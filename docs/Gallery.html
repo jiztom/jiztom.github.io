@@ -12,6 +12,7 @@
     <link href="css/main.css?ver=1.1.0" rel="stylesheet">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <!--<script src="https://kit.fontawesome.com/71fafc02de.js" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" type="text/css" href="styles_gallery.css">
     <style type="text/css" media="screen">
         * {
             margin: 0;
@@ -36,6 +37,59 @@
         div#main-content {
             padding-top: 70px;
         }
+
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+            div.gallery:hover {
+                border: 1px solid #777;
+            }
+
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .top-three {
+            margin-top:3cm;
+        }
+        .bottom-three {
+            margin-bottom: 3cm;
+        }
     </style>
 </head>
 <body id="top">
@@ -49,7 +103,7 @@
                     </div>
                     <div class="collapse navbar-collapse justify-content-end" id="navigation">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="/">home</a></li>                            
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="./Jiztom.html">home</a></li>
                         </ul>
                     </div>
                 </div>
@@ -57,4 +111,16 @@
         </div>
     </header>
 
+    <div class="intro">
+    <!--<h2>Image Gallery</h2>-->
+    <p class="top-three">Select a thumbnail below to view the image</p>
+    <div id="image-gallery">
+        <img id="current-image" src="images_drone/image1.jpg" alt="Image 1">
+        <div id="image-thumbs"></div>
+    </div>
+    </div>
+    <script src="script_gallery.js"></script>
+    <!-- Repeat the above structure for other images -->
+    <div class="clearfix"></div>
 </body>
+</html>
