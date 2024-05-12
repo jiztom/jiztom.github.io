@@ -68,7 +68,7 @@ custom dataset. The paper Bazi et al. for reference can be found
 
 <figure>
   <img
-  src="/docs/images/Posts/ViTModel.jpeg"
+  src="https://github.com/jiztom/jiztom.github.io/docs/images/Posts/ViTModel.jpeg"
   alt="The ViT model">
   <figcaption><b>Fig 1.</b> The architecture of the ViT with specific details on the transformer encoder 
 and the MSA block. Keep this picture in mind. Picture from <a href="https://www.researchgate.net/publication/348947034_Vision_Transformers_for_Remote_Sensing_Image_Classification">
@@ -113,6 +113,7 @@ This explanation clarifies the purpose of each step and emphasizes the importanc
    The patch dimension is adjusted according to needs. 
 
   In this example we are splitting it into 7x7 patches so each of the sub image is 4x4 image. thereby getting a 7x7=49 sub images
-  from a single input.  $$` (N,P^2, HWC/P^2) = (N,7x7.4x4) = (N, 49, 16)`$$
+  from a single input.  
+  $` (N,P^2, HWC/P^2) = (N,7x7.4x4) = (N, 49, 16)`$
 
 2. ** second** 
