@@ -59,3 +59,14 @@ Visualization of attention maps)
 This project provides a foundation for exploring the exciting world of vision transformers and their potential in image
 classification. By completing this project, you will gain valuable experience in implementing deep learning models, working with image
 datasets, and evaluating model performance.
+
+### Creating Vision Transformer from Scratch
+One of the state of the art models which have a high performance and inbuilt explainers for such models.
+We will be working on creating a Vision Transformer from Scratch and then work on customizing the model to work with the
+the custom dataset.
+
+#### Dataset
+We will start by trying to work with MNIST Data set by [LeCun et. al.](http://yann.lecun.com/exdb/mnist/)
+handwritten digits where each of them are 28x28 binary pixels
+
+gitlab code: [Image based transformer](https://git.ece.iastate.edu/jiztom/image-based-transformer)
