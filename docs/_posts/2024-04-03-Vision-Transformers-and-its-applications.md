@@ -134,3 +134,4 @@ This explanation clarifies the purpose of each step and emphasizes the importanc
 3. **Positional Encoding**
     
     Based on the work by [Vaswani et. al](https://arxiv.org/abs/1706.03762) suggest we can add sines and the cosine waves.
+   ![image](https://github.com/jiztom/jiztom.github.io/assets/47367860/48d64952-4ecc-4317-beda-9772cb293e4c)
