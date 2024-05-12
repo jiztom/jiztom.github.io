@@ -66,14 +66,11 @@ We will be working on creating a Vision Transformer from Scratch and then work o
 custom dataset. The paper Bazi et al. for reference can be found 
 [here](https://www.researchgate.net/publication/348947034_Vision_Transformers_for_Remote_Sensing_Image_Classification)
 
-<figure>
-  <img
-  src="/docs/images/Posts/ViTModel.jpeg"
-  alt="The ViT model">
-  <figcaption><b>Fig 1.</b> The architecture of the ViT with specific details on the transformer encoder 
-and the MSA block. Keep this picture in mind. Picture from <a href="https://www.researchgate.net/publication/348947034_Vision_Transformers_for_Remote_Sensing_Image_Classification">
-Bazi et. al.</a> </figcaption>
-</figure>
+
+
+|                                                                                                              ![The ViT model](/docs/images/Posts/Vit/ViTModel.jpeg)                                                                                                               |
+|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| **Fig 1.** The architecture of the ViT with specific details on the transformer encoder and the MSA block. Keep this picture in mind. Picture from [Bazi et. al.](https://www.researchgate.net/publication/348947034_Vision_Transformers_for_Remote_Sensing_Image_Classification) |
 
 #### Dataset
 We will start by trying to work with MNIST Data set by [LeCun et al.](http://yann.lecun.com/exdb/mnist/)
@@ -113,7 +110,9 @@ This explanation clarifies the purpose of each step and emphasizes the importanc
    The patch dimension is adjusted according to needs. 
 
   In this example we are splitting it into 7x7 patches so each of the sub image is 4x4 image. thereby getting a 7x7=49 sub images
-  from a single input.  
-  $` (N,P^2, HWC/P^2) = (N,7x7.4x4) = (N, 49, 16)`$
+  from a single input. 
+
+  ![Patchfying equation](/docs/images/Posts/Vit/part1:split.gif)
+
 
 2. ** second** 
