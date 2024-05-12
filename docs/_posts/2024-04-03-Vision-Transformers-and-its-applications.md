@@ -68,7 +68,7 @@ custom dataset. The paper Bazi et al. for reference can be found
 
 <figure>
   <img
-  src="https://github.com/jiztom/jiztom.github.io/blob/gh-pages/docs/images/Posts/ViTModel.jpeg"
+  src="/docs/images/Posts/ViTModel.jpeg"
   alt="The ViT model">
   <figcaption><b>Fig 1.</b> The architecture of the ViT with specific details on the transformer encoder 
 and the MSA block. Keep this picture in mind. Picture from <a href="https://www.researchgate.net/publication/348947034_Vision_Transformers_for_Remote_Sensing_Image_Classification">
