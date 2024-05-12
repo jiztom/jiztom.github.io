@@ -105,14 +105,32 @@ This explanation clarifies the purpose of each step and emphasizes the importanc
 ### Building ViT from scratch
 
 1. **Patchifying and linear mapping**:
+
    The transformer encoder was developed with a sequence data in mind such as English sentences. We can do this by reshaping 
    the input of say size in this context (N,C,H,W) for MNIST example (N,1,28,28) to size (N, #patches, Path dimension).
    The patch dimension is adjusted according to needs. 
 
-  In this example, we are splitting it into 7x7 patches so each of the sub images is a 4x4 image. thereby getting a 7x7=49 sub images
-  from a single input. 
+    In this example, we are splitting it into 7x7 patches so each of the sub images is a 4x4 image. thereby getting a 7x7=49 sub images
+    from a single input. 
 
-  ![part1:split](https://github.com/jiztom/jiztom.github.io/assets/47367860/50d5efe8-49fe-4221-a8c0-56705d85e1dd)
+    | ![part1:split](https://github.com/jiztom/jiztom.github.io/assets/47367860/50d5efe8-49fe-4221-a8c0-56705d85e1dd)  |
+    |------------------------------------------------------------------------------------------------------------------|
 
+    Notice that each patch is a picture of size 1x4x4, we will flatten into a 16 dimensional vecor. Here its a single channel
+    but in case of multichannel we will also flatten it into a single 1D vector.
 
-2. ** second** 
+    we modify the myViT class to implement the patchifying only. Not the most efficient method but its the best to learn
+    the process.
+
+2. **Adding the classification token**
+
+    In the architecture we see that "v_class" token also being passed to the transformer Encoder. This is a special token passed for capturing the information about other tokens. Will work at the MSA block when the information from all other tokens are present. initial value of the special token is a parameter of the model tha needs to be learned.
+
+    we can always add another special token at the end downstream for anohter task example to classify if the value is greater than or equal to 5. 
+    Now we add a parameter to our model to convert (N,49,*) tokens tensor to an (N,50,8) tensor
+
+    Note that the classification token is put in as the first token of each sequence.
+
+3. **Positional Encoding**
+    
+    Based on the work by [Vaswani et. al](https://arxiv.org/abs/1706.03762) suggest we can add sines and the cosine waves.
