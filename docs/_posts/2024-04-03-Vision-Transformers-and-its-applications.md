@@ -68,7 +68,7 @@ custom dataset. The paper Bazi et al. for reference can be found
 
 
 
-|                                                                                                                    ![The ViT model](./images/ViT/ViTModel.jpeg)                                                                                                                    |
+|                                                                                                                    ![ViTModel](https://github.com/jiztom/jiztom.github.io/assets/47367860/f85093ec-9de0-4483-bd05-e88fc8a4727b)                                                                                                                  |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | **Fig 1.** The architecture of the ViT with specific details on the transformer encoder and the MSA block. Keep this picture in mind. Picture from [Bazi et. al.](https://www.researchgate.net/publication/348947034_Vision_Transformers_for_Remote_Sensing_Image_Classification) |
 
@@ -87,7 +87,7 @@ Each sub-image is then processed through a **linear embedding layer**. This oper
 
 To understand the relative positions of these sub-images within the original image, a **positional encoding** step is crucial. This injects additional information into each vector, indicating its original location in the image grid. Without this positional information, the model wouldn't be able to capture the spatial relationships between different parts of the image, leading to potentially inaccurate predictions.
 
-These processed sub-image vectors, along with a special **classification token**, are then fed into a series of **stacked transformer encoder blocks**. Each encoder block consists of the following components:
+These processed sub-image vectors and a special **classification token**are then fed into a series of **stacked transformer encoder blocks**. Each encoder block consists of the following components:
 
 * **Layer normalization (LN):** This step normalizes the activations of the previous layer, improving training stability and gradient flow.
 * **Multi-head self-attention (MSA):** This core component allows the model to attend to relevant parts of other sub-image vectors within the sequence. It essentially enables the model to "look" at other patches and understand how they relate to the current patch, capturing long-range dependencies within the image.
@@ -109,11 +109,10 @@ This explanation clarifies the purpose of each step and emphasizes the importanc
    the input of say size in this context (N,C,H,W) for MNIST example (N,1,28,28) to size (N, #patches, Path dimension).
    The patch dimension is adjusted according to needs. 
 
-  In this example we are splitting it into 7x7 patches so each of the sub image is 4x4 image. thereby getting a 7x7=49 sub images
+  In this example, we are splitting it into 7x7 patches so each of the sub images is a 4x4 image. thereby getting a 7x7=49 sub images
   from a single input. 
 
-  ![Patchfying equation](./images/ViT/part1:split.gif)
+  ![part1:split](https://github.com/jiztom/jiztom.github.io/assets/47367860/50d5efe8-49fe-4221-a8c0-56705d85e1dd)
 
-[//]: # (  {% include image.html url="./images/ViT/ViTModel.jpeg" description="My cat, Robert Downey Jr." %})
 
 2. ** second** 
