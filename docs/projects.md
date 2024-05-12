@@ -5,10 +5,10 @@ layout: page
 permalink: /projects/
 ---
 
-Thes are a list of all the projects I am working on
+These are a list of all the projects I am working on
 
 1. [Website Project.](https://github.com/jiztom/jiztom.github.io/tree/gh-pages)
-	<details><summary>Extended summary</summary><div style="text-align: justify">This is the entire project of which the github pages are hosted out of. 
+	<details><summary>Extended summary</summary><div style="text-align: justify">This is the entire project of which the GitHub pages are hosted out of. 
      This includes a landing page and links to multiple project.</div></details>
 
 2. [Image Based Transformer](https://git.ece.iastate.edu/jiztom/image-based-transformer)
