@@ -68,7 +68,7 @@ custom dataset. The paper Bazi et al. for reference can be found
 
 
 
-|                                                                                                                ![The ViT model](https://github.com/jiztom/jiztom.github.io/tree/gh-pages/docs/images/Posts/Vit/ViTModel.jpeg)                                                                                                                |
+|                                                                                                                ![The ViT model](https://github.com/jiztom/jiztom.github.io/blob/gh-pages/docs/images/Posts/Vit/ViTModel.jpeg)                                                                                                                |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | **Fig 1.** The architecture of the ViT with specific details on the transformer encoder and the MSA block. Keep this picture in mind. Picture from [Bazi et. al.](https://www.researchgate.net/publication/348947034_Vision_Transformers_for_Remote_Sensing_Image_Classification) |
 
@@ -112,7 +112,7 @@ This explanation clarifies the purpose of each step and emphasizes the importanc
   In this example we are splitting it into 7x7 patches so each of the sub image is 4x4 image. thereby getting a 7x7=49 sub images
   from a single input. 
 
-  ![Patchfying equation](https://github.com/jiztom/jiztom.github.io/tree/gh-pages/docs/images/Posts/Vit/part1:split.gif)
-
+[//]: # (  ![Patchfying equation]&#40;https://github.com/jiztom/jiztom.github.io/tree/gh-pages/docs/images/Posts/Vit/part1:split.gif&#41;)
+  {% include image.html url="../images/Posts/Vit/ViTModel.jpeg" description="My cat, Robert Downey Jr." %}
 
 2. ** second** 
