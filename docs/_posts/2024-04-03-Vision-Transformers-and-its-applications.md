@@ -113,6 +113,6 @@ This explanation clarifies the purpose of each step and emphasizes the importanc
   from a single input. 
 
 [//]: # (  ![Patchfying equation]&#40;https://github.com/jiztom/jiztom.github.io/tree/gh-pages/docs/images/Posts/Vit/part1:split.gif&#41;)
-  {% include image.html url="/docs/images/Posts/Vit/ViTModel.jpeg" description="My cat, Robert Downey Jr." %}
+  {% include image.html url="./docs/images/Posts/Vit/ViTModel.jpeg" description="My cat, Robert Downey Jr." %}
 
 2. ** second** 
