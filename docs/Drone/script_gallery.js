@@ -1,9 +1,9 @@
 var imageThumbs = document.getElementById("image-thumbs");
 var currentImage = document.getElementById("current-image");
 
-for (var i = 1; i <= 10; i++) {
+for (var i = 1; i <= 16; i++) {
     var thumb = document.createElement("img");
-    thumb.src = "images_drone/image" + i + ".jpg";
+    thumb.src = "images_drone/image" + i + ".JPG";
     thumb.alt = "Image " + i;
     thumb.classList.add("thumb");
     imageThumbs.appendChild(thumb);
