@@ -114,8 +114,7 @@ This explanation clarifies the purpose of each step and emphasizes the importanc
     from a single input. 
 
     | ![part1:split](https://github.com/jiztom/jiztom.github.io/assets/47367860/50d5efe8-49fe-4221-a8c0-56705d85e1dd)  |
-    |------------------------------------------------------------------------------------------------------------------|
-
+    
     Notice that each patch is a picture of size 1x4x4, we will flatten into a 16 dimensional vecor. Here its a single channel
     but in case of multichannel we will also flatten it into a single 1D vector.
 
@@ -127,7 +126,7 @@ This explanation clarifies the purpose of each step and emphasizes the importanc
     In the architecture we see that "v_class" token also being passed to the transformer Encoder. This is a special token passed for capturing the information about other tokens. Will work at the MSA block when the information from all other tokens are present. initial value of the special token is a parameter of the model tha needs to be learned.
 
     we can always add another special token at the end downstream for anohter task example to classify if the value is greater than or equal to 5. 
-    Now we add a parameter to our model to convert (N,49,*) tokens tensor to an (N,50,8) tensor
+    Now we add a parameter to our model to convert (N,49,8) tokens tensor to an (N,50,8) tensor
 
     Note that the classification token is put in as the first token of each sequence.
 
