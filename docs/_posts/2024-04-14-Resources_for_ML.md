@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Vision Transformers and its interesting challenges"
+title:  "Machine Learning and related works for reference
 date:   2024-04-14 07:33:00 -0500
 categories: jekyll update
 ---
