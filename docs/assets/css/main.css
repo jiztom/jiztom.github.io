@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1656,3 +1659,85 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/* Scrollable Gallery with Font Awesome Arrows */
+.gallery-container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.gallery {
+	display: flex;
+	transition: transform 0.5s ease;
+}
+
+.gallery img {
+	max-width: 100%;
+	height: auto;
+	flex-shrink: 0;
+	object-fit: cover;
+	margin-right: 10px;
+}
+
+.arrow {
+	background-color: rgba(0, 0, 0, 0.5);
+	border: none;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+	font-size: 2em;
+}
+
+.left-arrow {
+	left: 10px;
+}
+
+.right-arrow {
+	right: 10px;
+}
+
+.arrow:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.image.main img.circular-image {
+	width: 250px;               /* Increase the width to make the image larger */
+	height: 250px;              /* Ensure the height matches the width for a perfect circle */
+	border-radius: 50%;         /* Makes the image circular */
+	object-fit: cover;          /* Ensures the image covers the container without distortion */
+	display: block;             /* Ensures the image is a block element */
+	margin: 0 auto;             /* Centers the image within its container */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+	max-width: none;            /* Ensure width is not overridden by other styles */
+}
+
+/*--*/
+.gif-container {
+	display: flex;               /* Use flexbox to align items */
+	justify-content: center;     /* Center horizontally */
+	align-items: center;         /* Center vertically */
+	height: 100%;                /* Ensure the container takes up the full height if needed */
+	text-align: center;          /* Center text (if any) */
+	margin: 20px 0;              /* Add some vertical spacing */
+}
+
+.gif-image {
+	max-width: 100%;             /* Ensure the GIF scales properly */
+	height: auto;                /* Maintain aspect ratio */
+	border-radius: 10px;         /* Optional: Add rounded corners */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+}
+
+
+
+
+
+
+
