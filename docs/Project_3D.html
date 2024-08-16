@@ -10,7 +10,6 @@ author: "Jiztom Kavalakkatt Francis"
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
@@ -21,9 +20,9 @@ author: "Jiztom Kavalakkatt Francis"
 	<!-- Header -->
 	<header id="header">
 		<div class="logo">
-                <span>
-                    <img src="images/JFK_1.png" alt="JFK Creative Arts Logo" style="width:100px; height:100px;">
-                </span>
+            <span>
+                <img src="images/JFK_1.png" alt="JFK Creative Arts Logo" style="width:100px; height:100px;">
+            </span>
 		</div>
 		<div class="content">
 			<div class="inner">
@@ -48,7 +47,7 @@ author: "Jiztom Kavalakkatt Francis"
 		<!-- Intro -->
 		<article id="intro">
 			<h2 class="major">Introduction</h2>
-			<span class="image main"><img src="images/pic01.jpg" alt="JFK Creative Arts" /></span>
+			<span class="image main"><img src="images/3Dprint/3D-printer-2048.jpeg" alt="JFK Creative Arts" /></span>
 			<p>As a creative problem-solver and hands-on innovator, I’ve spent the last few years pushing the boundaries of what’s possible at the intersection of data science, machine learning, and 3D printing. My journey has been marked by a relentless curiosity and a passion for bringing complex ideas to life, whether through advanced data visualization tools or intricate 3D-printed designs.</p>
 			<p>In my role as a Digital Agriculture Graduate Research Assistant at Iowa State University, I've honed my skills in machine vision and machine learning, developing solutions that have not only increased data precision but also improved field accuracy. My work on enhancing image-based predictions and streamlining data visualization tools has made a tangible impact, showcasing my ability to translate cutting-edge research into practical applications.</p>
 			<p>But my expertise isn’t confined to the digital realm. With a deep interest in 3D printing, I’ve explored how this technology can be used to prototype and create physical manifestations of complex data models. This hands-on approach allows me to bridge the gap between abstract algorithms and tangible objects, turning theoretical concepts into something you can hold and interact with.</p>
@@ -59,7 +58,7 @@ author: "Jiztom Kavalakkatt Francis"
 		<!-- Work -->
 		<article id="work">
 			<h2 class="major">3D Printer</h2>
-			<span class="image main"><img src="images/pic02.jpg" alt="Bambu Lab P1S" /></span>
+			<span class="image main"><img src="images/3Dprint/P1s_long.jpg" alt="Bambu Lab P1S" /></span>
 			<p>The Bambu Lab P1S is a cutting-edge 3D printer designed for precision and reliability, making it an ideal choice for printing highly accurate models and intricate details. With its advanced features, including a high-resolution nozzle and precise layer alignment, the P1S excels at producing detailed prints that capture every nuance of your designs.</p>
 
 			<!-- 3D Printer in Action Section -->
@@ -67,33 +66,39 @@ author: "Jiztom Kavalakkatt Francis"
 			<div class="gif-container">
 				<img src="images/3Dprint/gold_bullet_printing.gif" alt="3D Printing Process" class="gif-image" />
 			</div>
-<!--			<div class="video-container">-->
-<!--				<video controls class="video">-->
-<!--					<source src="videos/3d_printing.mp4" type="video/mp4">-->
-<!--					Your browser does not support the video tag.-->
-<!--				</video>-->
-<!--			</div>-->
 
 			<p>When it comes to printing accurate pictures, the Bambu Lab P1S shines through its ability to translate digital images into finely detailed 3D prints. By converting your images into 3D models, the P1S can recreate textures, gradients, and even complex shading with remarkable fidelity. Its robust software allows for fine-tuning of print settings, ensuring that every layer is laid down with meticulous care, resulting in crisp, clear reproductions.</p>
 			<p>Whether you’re looking to create photorealistic models, detailed miniatures, or any other intricate designs, the Bambu Lab P1S provides the precision and quality needed to bring your visions to life. With this printer, you can achieve stunningly accurate 3D prints that truly stand out.</p>
 
-			<!-- Scrollable Gallery with Arrows -->
+			<!-- Gallery Section -->
 			<section id="gallery" class="major">
 				<h2>Project Gallery</h2>
 				<div class="gallery-container">
 					<button class="arrow left-arrow"><i class="fas fa-chevron-left"></i></button> <!-- Left Arrow -->
 					<div class="gallery">
-						<img src="images/Drone/Drone1.JPG" alt="Project 1">
-						<img src="images/Drone/Drone%202.JPG" alt="Project 2">
-						<img src="images/Drone/Drone3.JPG" alt="Project 3">
-						<img src="images/Drone/Drone%204.jpg" alt="Project 4">
+						<img src="images/Drone/Drone1.JPG" alt="Project 1" class="gallery-image">
+						<img src="images/Drone/Drone%202.JPG" alt="Project 2" class="gallery-image">
+						<img src="images/Drone/Drone3.JPG" alt="Project 3" class="gallery-image">
+						<img src="images/Drone/Drone%204.jpg" alt="Project 4" class="gallery-image">
 						<!-- Add more images as needed -->
 					</div>
 					<button class="arrow right-arrow"><i class="fas fa-chevron-right"></i></button> <!-- Right Arrow -->
 				</div>
 			</section>
-
 		</article>
+
+		<!-- Modal for Full-Size Image with Navigation Arrows -->
+		<div id="imageModal" class="modal">
+			<span class="close">&times;</span>
+			<div class="modal-content-wrapper">
+				<span class="modal-arrow modal-left-arrow">&#10094;</span> <!-- Left Arrow -->
+				<div class="modal-image-container">
+					<img class="modal-content" id="fullImage">
+					<div id="caption"></div> <!-- Caption below the image -->
+				</div>
+				<span class="modal-arrow modal-right-arrow">&#10095;</span> <!-- Right Arrow -->
+			</div>
+		</div>
 
 		<!-- About -->
 		<article id="about">
@@ -132,9 +137,7 @@ author: "Jiztom Kavalakkatt Francis"
 				</ul>
 			</form>
 			<ul class="icons">
-<!--				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>-->
 				<li><a href="https://www.facebook.com/jiztom/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-<!--				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>-->
 				<li><a href="https://github.com/jiztom" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 				<li><a href="https://www.linkedin.com/in/jiztom/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 			</ul>
@@ -159,45 +162,79 @@ author: "Jiztom Kavalakkatt Francis"
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 
+<!-- Custom Script -->
 <script>
 	document.addEventListener('DOMContentLoaded', function() {
-		const gallery = document.querySelector('.gallery');
-		const leftArrow = document.querySelector('.left-arrow');
-		const rightArrow = document.querySelector('.right-arrow');
-		const images = document.querySelectorAll('.gallery img');
-		let currentPosition = 0;
+		const modal = document.getElementById("imageModal");
+		const modalImg = document.getElementById("fullImage");
+		const captionText = document.getElementById("caption");
+		const images = document.querySelectorAll('.gallery-image');
+		let currentImageIndex = 0;
 
-		function updateGalleryPosition() {
-			gallery.style.transform = `translateX(${currentPosition}px)`;
-		}
+		// Function to open the modal and display the clicked image
+		const openModal = (index) => {
+			currentImageIndex = index;
+			modal.style.display = "flex";
+			modalImg.src = images[index].src;
+			captionText.innerHTML = images[index].alt;
+		};
 
-		rightArrow.addEventListener('click', function() {
-			const imageWidth = images[0].getBoundingClientRect().width;
-			if (currentPosition > -(imageWidth * (images.length - 1))) {
-				currentPosition -= imageWidth;
-				updateGalleryPosition();
+		// Attach click event listeners to each gallery image
+		images.forEach((image, index) => {
+			image.addEventListener('click', function(event) {
+				event.preventDefault(); // Prevent any default behavior
+				openModal(index); // Open the modal for the clicked image
+			});
+		});
+
+		// Function to close the modal and return to the Work section
+		const closeModal = () => {
+			modal.style.display = "none";
+		};
+
+		// Close the modal when the close button is clicked
+		document.querySelector(".close").addEventListener('click', function(event) {
+			event.preventDefault(); // Prevent any default behavior
+			closeModal();
+		});
+
+		// Close the modal when clicking outside of the image
+		modal.addEventListener('click', function(event) {
+			if (event.target === modal) {
+				closeModal();
 			}
 		});
 
-		leftArrow.addEventListener('click', function() {
-			const imageWidth = images[0].getBoundingClientRect().width;
-			if (currentPosition < 0) {
-				currentPosition += imageWidth;
-				updateGalleryPosition();
+		// Function to navigate to the next image
+		const showNextImage = () => {
+			if (currentImageIndex < images.length - 1) {
+				currentImageIndex++;
+				modalImg.src = images[currentImageIndex].src;
+				captionText.innerHTML = images[currentImageIndex].alt;
 			}
+		};
+
+		// Function to navigate to the previous image
+		const showPrevImage = () => {
+			if (currentImageIndex > 0) {
+				currentImageIndex--;
+				modalImg.src = images[currentImageIndex].src;
+				captionText.innerHTML = images[currentImageIndex].alt;
+			}
+		};
+
+		// Attach event listeners to the navigation arrows
+		document.querySelector(".modal-left-arrow").addEventListener('click', function(event) {
+			event.stopPropagation();
+			showPrevImage();
 		});
 
-		window.addEventListener('resize', function() {
-			const imageWidth = images[0].getBoundingClientRect().width;
-			currentPosition = Math.round(currentPosition / imageWidth) * imageWidth;
-			updateGalleryPosition();
+		document.querySelector(".modal-right-arrow").addEventListener('click', function(event) {
+			event.stopPropagation();
+			showNextImage();
 		});
 	});
 </script>
 
-
-
-
 </body>
 </html>
-

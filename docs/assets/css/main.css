@@ -1660,13 +1660,27 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-/* Scrollable Gallery with Font Awesome Arrows */
+/* Work Section */
+#work {
+	padding: 20px;
+}
+
+/* Image Styling */
+.image.main img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+/* Gallery Container */
 .gallery-container {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .gallery {
@@ -1675,13 +1689,16 @@ input, select, textarea {
 }
 
 .gallery img {
-	max-width: 100%;
+	width: 150px;
 	height: auto;
-	flex-shrink: 0;
-	object-fit: cover;
 	margin-right: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	flex-shrink: 0; /* Prevent shrinking */
 }
 
+/* Arrow buttons */
 .arrow {
 	background-color: rgba(0, 0, 0, 0.5);
 	border: none;
@@ -1692,7 +1709,6 @@ input, select, textarea {
 	top: 50%;
 	transform: translateY(-50%);
 	z-index: 10;
-	font-size: 2em;
 }
 
 .left-arrow {
@@ -1707,32 +1723,134 @@ input, select, textarea {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
-.image.main img.circular-image {
-	width: 250px;               /* Increase the width to make the image larger */
-	height: 250px;              /* Ensure the height matches the width for a perfect circle */
-	border-radius: 50%;         /* Makes the image circular */
-	object-fit: cover;          /* Ensures the image covers the container without distortion */
-	display: block;             /* Ensures the image is a block element */
-	margin: 0 auto;             /* Centers the image within its container */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
-	max-width: none;            /* Ensure width is not overridden by other styles */
+/* Modal background */
+.modal {
+	display: none; /* Ensure the modal is hidden by default */
+	position: fixed;
+	z-index: 1000; /* Ensure the modal is on top of other content */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-/*--*/
+/* Modal content wrapper */
+.modal-content-wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Modal image container */
+.modal-image-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 80%;
+	max-height: 80vh;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+	display: block;
+	max-width: 100%;
+	max-height: calc(100vh - 100px); /* Adjust height to allow space for caption */
+	margin: auto;
+	border-radius: 10px;
+}
+
+/* Caption Text */
+#caption {
+	color: #ccc;
+	font-size: 18px;
+	margin-top: 10px;
+	text-align: center;
+	max-width: 100%;
+	word-wrap: break-word;
+}
+
+/* The Close Button */
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+}
+
+/* Navigation arrows */
+.modal-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 40px;
+	color: white;
+	cursor: pointer;
+	z-index: 1001;
+}
+
+.modal-left-arrow {
+	left: 20px;
+}
+
+.modal-right-arrow {
+	right: 20px;
+}
+
+.modal-arrow:hover {
+	color: #bbb;
+}
+
+
+/* Caption Text */
+#caption {
+	color: #ccc;
+	font-size: 18px;
+	margin-top: 15px;
+	text-align: center;
+	width: 80%;
+	max-width: 700px;
+}
+
+/* GIF Styling */
 .gif-container {
-	display: flex;               /* Use flexbox to align items */
-	justify-content: center;     /* Center horizontally */
-	align-items: center;         /* Center vertically */
-	height: 100%;                /* Ensure the container takes up the full height if needed */
-	text-align: center;          /* Center text (if any) */
-	margin: 20px 0;              /* Add some vertical spacing */
+	width: 100%; /* Make container full width */
+	text-align: center; /* Center the content inside */
+	margin: 20px 0; /* Add some spacing above and below */
 }
 
 .gif-image {
-	max-width: 100%;             /* Ensure the GIF scales properly */
-	height: auto;                /* Maintain aspect ratio */
-	border-radius: 10px;         /* Optional: Add rounded corners */
+	max-width: 100%; /* Ensure the GIF scales properly within its container */
+	height: auto; /* Maintain aspect ratio */
+	display: inline-block; /* Ensure the GIF is treated as a block-level element */
+	border-radius: 10px; /* Optional: Add rounded corners */
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+}
+
+/* Use !important to ensure the styles are applied */
+.circular-image {
+	width: 250px !important;
+	height: 250px !important;
+	border-radius: 50% !important;
+	object-fit: cover !important;
+	display: block !important;
+	margin: 0 auto !important;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
 }
 
 
