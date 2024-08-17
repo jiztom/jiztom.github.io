@@ -1673,73 +1673,74 @@ input, select, textarea {
 	margin: 0 auto;
 }
 
-/* Gallery Container */
-.gallery-container {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.gallery {
-	display: flex;
-	transition: transform 0.5s ease;
-}
-
-.gallery img {
-	width: 150px;
-	height: auto;
-	margin-right: 10px;
-	border-radius: 10px;
-	cursor: pointer;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	flex-shrink: 0; /* Prevent shrinking */
-}
-
-/* Arrow buttons */
-.arrow {
-	background-color: rgba(0, 0, 0, 0.5);
-	border: none;
-	color: white;
+/* Scrollable Gallery Container */
+.scrollable-gallery {
+	display: flex; /* Display images in a row */
+	overflow-x: auto; /* Enable horizontal scrolling */
+	scrollbar-width: thin; /* Firefox */
+	-ms-overflow-style: -ms-autohiding-scrollbar; /* IE and Edge */
 	padding: 10px;
+	gap: 10px;
+	scroll-behavior: smooth;
+}
+
+/* Style for the gallery images */
+.scrollable-gallery img {
+	max-width: 150px; /* Adjust the size of the thumbnails */
+	height: auto;
 	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 10;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.left-arrow {
-	left: 10px;
+/* Scrollbar styling for Webkit (Chrome, Safari) */
+.scrollable-gallery::-webkit-scrollbar {
+	height: 8px;
 }
 
-.right-arrow {
-	right: 10px;
+.scrollable-gallery::-webkit-scrollbar-thumb {
+	background-color: #888;
+	border-radius: 10px;
 }
 
-.arrow:hover {
-	background-color: rgba(0, 0, 0, 0.8);
+.scrollable-gallery::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+	border-radius: 10px;
 }
 
-/* Modal background */
+/* Circular Image for About Section */
+.circular-image {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	display: block;
+	margin: 0 auto;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*!* Gallery Image Style *!*/
+/*.gallery-image {*/
+/*	width: 100%;*/
+/*	height: auto;*/
+/*	cursor: pointer;*/
+/*}*/
+
+/* Modal Styles */
 .modal {
-	display: none; /* Ensure the modal is hidden by default */
+	display: none;
 	position: fixed;
-	z-index: 1000; /* Ensure the modal is on top of other content */
+	z-index: 1000;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	background-color: rgba(0, 0, 0, 0.9); /* Dark background */
-	display: flex;
+	background-color: rgba(0, 0, 0, 0.9);
 	align-items: center;
 	justify-content: center;
 }
 
-/* Modal content wrapper */
 .modal-content-wrapper {
 	position: relative;
 	display: flex;
@@ -1747,7 +1748,6 @@ input, select, textarea {
 	justify-content: center;
 }
 
-/* Modal image container */
 .modal-image-container {
 	display: flex;
 	flex-direction: column;
@@ -1756,16 +1756,13 @@ input, select, textarea {
 	max-height: 80vh;
 }
 
-/* Modal Content (Image) */
 .modal-content {
-	display: block;
 	max-width: 100%;
-	max-height: calc(100vh - 100px); /* Adjust height to allow space for caption */
+	max-height: 70vh;
 	margin: auto;
 	border-radius: 10px;
 }
 
-/* Caption Text */
 #caption {
 	color: #ccc;
 	font-size: 18px;
@@ -1775,7 +1772,6 @@ input, select, textarea {
 	word-wrap: break-word;
 }
 
-/* The Close Button */
 .close {
 	position: absolute;
 	top: 15px;
@@ -1787,13 +1783,6 @@ input, select, textarea {
 	transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
-	color: #bbb;
-	text-decoration: none;
-}
-
-/* Navigation arrows */
 .modal-arrow {
 	position: absolute;
 	top: 50%;
