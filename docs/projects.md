@@ -1,6 +1,6 @@
 ---
 title: Projects
-author: "Jiztom Kavalakkatt Francis"
+author: "Venkata Subba Reddy"
 layout: page
 permalink: /projects/
 ---
