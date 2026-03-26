@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Jiztom's Landing Page
-email: jiztom@iastate.edu
+title: Venkat's Landing Page
+email: subbar77@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is the landing page of all the work being done by jiztom.
   All information will be updated as and when the author finds time for
@@ -31,8 +31,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 #baseurl: "/jiztom.github.io/" # the subpath of your site, e.g. /blog
 #url: "https://jiztom.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 url: ""
-twitter_username: jiztom
-github_username:  jiztom
+Linkedin_username: Venkat
+github_username:  subbar-77
 
 # Build settings
 theme: minima
